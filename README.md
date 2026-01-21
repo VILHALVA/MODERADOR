@@ -9,12 +9,12 @@ Este projeto simula um **bot moderador para grupos do Telegram**, apresentado em
 
 O bot exibe menus organizados por categorias, explica comandos administrativos e oferece uma experiência visual **inspirada no Telegram**, incluindo:
 
-* Menu com botões interativos
-* Mensagens formatadas com quebras de linha
-* Comandos e menções destacados automaticamente
-* Possibilidade de **copiar comandos e @menções ao clicar**
-* Feedback visual ao copiar (“✔Copiado”)
-* Layout inspirado no chat do Telegram, com avatar fixo
+* Menu com botões interativos;
+* Mensagens formatadas com quebras de linha;
+* Comandos e menções destacados automaticamente;
+* Possibilidade de **copiar comandos e @menções ao clicar**;
+* Feedback visual ao copiar (“✔Copiado”);
+* Layout inspirado no chat do Telegram, com **avatar fixo durante o rolamento**, leitura contínua de cima para baixo e posicionamento inteligente das mensagens (sem cortes no título ou no nome do bot).
 
 O objetivo do projeto é **demonstrar, documentar e facilitar o uso dos comandos de um bot moderador**, de forma intuitiva, organizada e visualmente familiar para usuários do Telegram.
 
@@ -23,9 +23,7 @@ O objetivo do projeto é **demonstrar, documentar e facilitar o uso dos comandos
 1. Abra o arquivo abaixo em qualquer navegador moderno:
 
 ```
-
 ./CODIGO/index.html
-
 ```
 
 2. Ao carregar a página, o bot enviará uma mensagem inicial explicando sua função.
@@ -68,4 +66,5 @@ Cada botão exibe uma explicação detalhada e organizada dos comandos disponív
 
 ## CREDITOS:
 - [PROJETO BASEADO NO "MYDEBOT"](https://github.com/VILHALVA/MYDEBOT)
+
 - [PROJETO FEITO PELO VILHALVA](https://github.com/VILHALVA)
