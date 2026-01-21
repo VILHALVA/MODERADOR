@@ -90,19 +90,18 @@ function addMessage(senderName, avatarUrl, text, senderClass) {
         </div>
     `;
 
-    $('#chat-container').append(messageHtml);
-    $('#chat-container').scrollTop($('#chat-container')[0].scrollHeight);
-}
+    const $message = $(messageHtml);
+    $('#chat-container').append($message);
 
-function showInlineButtons(buttons) {
-    let buttonsHtml = `
-        <div class="inline-buttons">
-            ${buttons.map(button => `<button>${button}</button>`).join('')}
-        </div>
-    `;
+    const container = $('#chat-container');
 
-    $('#chat-container').append(buttonsHtml);
-    $('#chat-container').scrollTop($('#chat-container')[0].scrollHeight);
+    container.animate({
+        scrollTop:
+            $message.offset().top
+            - container.offset().top
+            + container.scrollTop()
+            - 20   
+    }, 300);
 }
 
 function getBotResponse(userInput) {
@@ -115,6 +114,22 @@ function getBotResponse(userInput) {
     }
 
     return responses["default"];
+}
+
+function showInlineButtons(buttons) {
+    let buttonsHtml = `
+        <div class="inline-buttons">
+            ${buttons.map(button => `<button>${button}</button>`).join('')}
+        </div>
+    `;
+
+    const $buttons = $(buttonsHtml);
+    $('#chat-container').append($buttons);
+
+    // 🔥 scroll até o início dos botões (estilo Telegram)
+    $('#chat-container').animate({
+        scrollTop: $buttons.position().top + $('#chat-container').scrollTop()
+    }, 300);
 }
 
 $(document).on("click", ".copy-item", function () {
