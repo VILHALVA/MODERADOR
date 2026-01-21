@@ -126,7 +126,6 @@ function showInlineButtons(buttons) {
     const $buttons = $(buttonsHtml);
     $('#chat-container').append($buttons);
 
-    // 🔥 scroll até o início dos botões (estilo Telegram)
     $('#chat-container').animate({
         scrollTop: $buttons.position().top + $('#chat-container').scrollTop()
     }, 300);
