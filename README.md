@@ -1,32 +1,63 @@
 # MODERADOR
-👨‍🏫ESTE CHATBOT PERMITE QUE OS USUÁRIOS EXPLOREM OS PRINCIPAIS CONCEITOS DA MODERAÇÃO!
+👨‍🏫ESTE CHATBOT PERMITE QUE OS USUÁRIOS EXPLOREM OS PRINCIPAIS COMANDOS DO MODERADOR!
 
 <img src="./IMAGENS/FOTO_01.png" align="center" width="500"> <br> <br>
 <img src="./IMAGENS/FOTO_02.png" align="center" width="500"> <br>
 
 ## DESCRIÇÃO:
-Este bot é um assistente interativo projetado para gerenciar um grupo no Telegram. Ele fornece opções para configurar mensagens de boas-vindas, aplicar filtros anti-spam, prevenir flood de mensagens e controlar a entrada de diferentes tipos de mídias no grupo. Os usuários podem interagir com o bot através de um menu de botões, tornando a experiência mais intuitiva e organizada.
+Este projeto simula um **bot moderador para grupos do Telegram**, apresentado em uma **interface web interativa**.
+
+O bot exibe menus organizados por categorias, explica comandos administrativos e oferece uma experiência visual **inspirada no Telegram**, incluindo:
+
+* Menu com botões interativos
+* Mensagens formatadas com quebras de linha
+* Comandos e menções destacados automaticamente
+* Possibilidade de **copiar comandos e @menções ao clicar**
+* Feedback visual ao copiar (“✔Copiado”)
+* Layout inspirado no chat do Telegram, com avatar fixo
+
+O objetivo do projeto é **demonstrar, documentar e facilitar o uso dos comandos de um bot moderador**, de forma intuitiva, organizada e visualmente familiar para usuários do Telegram.
 
 ## EXECUTANDO O PROJETO:
-1. **Iniciar o Bot:**
-   - Abra o arquivo `./CODIGO/index.html` no navegador de sua preferencia.
-   - Ao começar a interagir com o bot, você verá uma mensagem de boas-vindas que indica que você está no menu principal. 
-   - A mensagem é acompanhada de opções que você pode escolher clicando nos botões exibidos.
+### INICIAR O PROJETO:
+1. Abra o arquivo abaixo em qualquer navegador moderno:
 
-2. **Escolher uma Opção:**
-   - Você pode escolher entre as seguintes opções clicando nos respectivos botões:
-     - **BOAS VINDAS**: Define uma mensagem personalizada que será enviada a novos membros do grupo.
-     - **ANTI-SPAM**: Configura um sistema que filtra mensagens indesejadas e links, ajudando a manter o grupo livre de spam.
-     - **ANTI-FLOOD**: Impede que uma quantidade excessiva de mensagens seja enviada em um curto espaço de tempo, garantindo um fluxo de conversa mais controlado.
-     - **BLOQUEIO DE MÍDIA**: Permite que você controle quais tipos de mídias podem ser enviadas no grupo (como fotos, vídeos, áudios, etc.).
+```
 
-3. **Interagir com as Respostas:**
-   - Cada vez que você clica em uma opção do menu, o bot responde com informações detalhadas sobre a opção escolhida. 
-   - Essas respostas podem incluir links para mais informações, que são exibidos em um formato que permite que você clique e acesse diretamente.
+./CODIGO/index.html
 
-4. **Exemplo de Uso:**
-   - Ao clicar no botão **BOAS VINDAS**, você verá uma mensagem explicando como definir uma mensagem de boas-vindas personalizada, com um link para mais detalhes.
-   - Ao clicar em **ANTI-SPAM**, o bot explicará como a função anti-spam funciona, também com um link para mais informações.
+```
+
+2. Ao carregar a página, o bot enviará uma mensagem inicial explicando sua função.
+3. Um botão **COMANDOS** ficará disponível para iniciar a interação com o bot.
+
+### NAVEGAR PELO MENU DE COMANDOS:
+Ao clicar em **COMANDOS**, o bot exibirá um menu com botões interativos organizados por categoria:
+
+* **💁🏻‍♂️ BÁSICO**  
+Comandos essenciais para administração do grupo.
+
+* **🙋🏻‍♂️ AVANÇADO**  
+Gerenciamento de advertências, mensagens e ações administrativas.
+
+* **🕵🏼‍♂️ ESPECIALISTAS**  
+Ferramentas avançadas como mensagens fixadas, estatísticas e análise de membros.
+
+* **💆🏻‍♂️ PROFISSIONAL**  
+Sistema de suporte entre grupo principal e grupo de suporte, com ações sincronizadas.
+
+Cada botão exibe uma explicação detalhada e organizada dos comandos disponíveis naquela categoria.
+
+### INTERAGIR COM OS COMANDOS:
+* Todos os comandos exibidos (ex: `/ban`, `/mute`, `/pin`, `/infopvt`) aparecem em **negrito**.
+* Menções como `@ADM_GROUP_BOT` e `@ghStaffBot` também são destacadas.
+* Os comandos e menções são **clicáveis**:
+
+* Ao clicar, o texto é automaticamente **copiado para a área de transferência**.
+* Um feedback visual é exibido no próprio texto: **“✔Copiado”**.
+* Após alguns instantes, o texto original é restaurado.
+
+* As mensagens respeitam **quebras de linha**, garantindo uma leitura clara e organizada, mesmo em textos longos.
 
 ## NÃO SABE?
 - Entendemos que para manipular arquivos em `HTML`, `CSS` e outras linguagens relacionadas, é necessário possuir conhecimento nessas áreas. Para auxiliar nesse aprendizado, oferecemos cursos gratuitos disponíveis:
