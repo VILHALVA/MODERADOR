@@ -63,14 +63,14 @@ function formatCommands(text) {
     return text
         .replace(/\n/g, "<br>")
 
-        .replace(/(\/[a-zA-Z0-9_]+(?::)?)/g,
-            '<span class="copy-item command" data-copy="$1"><strong>$1</strong></span>'
+        .replace(/(\/[a-zA-Z0-9_]+)(:)?/g,
+            '<span class="copy-item command" data-copy="$1"><strong>$1</strong>$2</span>'
         )
 
         .replace(/(@[a-zA-Z0-9_]+)/g,
             '<span class="copy-item mention" data-copy="$1"><strong>$1</strong></span>'
         );
-    }
+}
 
 function addMessage(senderName, avatarUrl, text, senderClass) {
     if (senderClass === 'sender-2') {
